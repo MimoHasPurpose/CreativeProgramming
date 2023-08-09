@@ -1,0 +1,24 @@
+void setup(){
+
+size(600,600);
+background(255);
+
+
+}
+float count =0;
+void draw(){
+ count++;
+float randx=random(width);
+float randy=random(height);
+line(0,0,randx,randy);
+line(0,height,randx,randy);
+line(width,0,randx,randy);
+if(count==50){
+  noLoop();
+}
+
+}
+void mousePressed(){
+noLoop();
+
+}

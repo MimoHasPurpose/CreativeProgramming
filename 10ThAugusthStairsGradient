@@ -1,0 +1,26 @@
+// made stairs with color gradient
+void setup(){
+size(500,500);
+background(255);
+
+}
+float count=0;
+
+float x=0;
+float y=0;
+void draw(){
+//rotate(mouseX/100.0);
+// write code to fill color
+
+//float g=random(1,255);
+//float b=random(1,255);
+fill( x,20,20);
+rect(x,y,80,10);
+x=x+25;
+y=y+10;
+
+if(count==20){
+noLoop();
+}
+
+}

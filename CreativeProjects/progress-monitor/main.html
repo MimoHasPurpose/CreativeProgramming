@@ -1,22 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Study Hours Input</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Study Hours Tracker</h1>
-    <form id="study-hours-form" action="/submit-study-hours" method="post">
-      <label for="study-hours">Number of hours studied:</label>
-      <input
-        type="number"
-        id="study-hours"
-        name="study-hours"
-        min="0"
-        required
-      />
-      <button type="submit">Submit</button>
-    </form>
-    <script src="script.js"></script>
-  </body>
-</html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div id="a">
+            <div id="container1" class="child">
+                <h1>Progress Monitor</h1>
+                <canvas id="myChart" ></canvas>
+            </div>
+            <div id="container2" class="child">
+                So i will be monitoring all my progress here.
+            </div>
+    
+        </div>    
+    </body>
+    </html>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById("myChart");
+
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      datasets: [
+        {
+          label: "No of Hours",
+          data: [0, 0, 0, 0, 0, 0, 0],
+          borderWidth: 10,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+        },
+      },
+    },
+  });
+</script>

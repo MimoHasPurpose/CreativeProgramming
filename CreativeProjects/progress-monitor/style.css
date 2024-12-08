@@ -1,4 +1,21 @@
 
-body {
-    text-align: center;
+#a{
+    /* align-content: center; */
+    /* align-items: flex-start; */
+    background-color: gainsboro;
+    width: 1000px;
+    height: 1000px;
+      
+}
+
+
+
+.child{
+    display:inline-block;
+    width:400px;
+    height: 400px;
+    border: 2px solid grey;
+    border-radius: 8px;
+
+   vertical-align: middle;
 }

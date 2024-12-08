@@ -8,7 +8,9 @@
       
 }
 
-
+label{
+    width:15px;
+}
 
 .child{
     display:inline-block;

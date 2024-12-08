@@ -1,54 +1,57 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        
-        <link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="a">
+      <div id="container1" class="child">
+        <h1>Progress Monitor</h1>
+        <canvas id="myChart"></canvas>
+      </div>
+      <div id="container2" class="child">
+        So i will be monitoring all my progress here.
 
-    </head>
-    <body>
-        <div id="a">
-            <div id="container1" class="child">
-                <h1>Progress Monitor</h1>
-                <canvas id="myChart" ></canvas>
-            </div>
-            <div id="container2" class="child">
-                So i will be monitoring all my progress here.
-            </div>
-    
-        </div>    
-    </body>
-    </html>
+        <form onsubmit="return m()">
+          <label for="name">Mon</label>
+          <input type="text" id="name" required/>
+          <button type="submit">Submit</button>
+        </form>
+        <!-- <form onsubmit="return t()">
+          <label for="name">Tue</label>
+          <input type="text" id="name" required />
+          <button type="submit">Submit</button>
+        </form>
+        <form onsubmit="return w()">
+          <label for="name">Wed</label>
+          <input type="text" id="name" required />
+          <button type="submit">Submit</button>
+        </form>
+        <form onsubmit="return th()">
+          <label for="name">Thu</label>
+          <input type="text" id="name" required />
+          <button type="submit">Submit</button>
+        </form>
+        <form onsubmit="return f()">
+          <label for="name">Fri</label>
+          <input type="text" id="name" required />
+          <button type="submit">Submit</button>
+        </form>
+        <form onsubmit="return s()">
+          <label for="name">Sat</label>
+          <input type="text" id="name" required />
+          <button type="submit">Submit</button>
+        </form>
+        <form onsubmit="return su()">
+          <label for="name">Sun</label>
+          <input type="text" id="name" required />
+          <button type="submit">Submit</button>
+        </form> -->
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<script>
-  const ctx = document.getElementById("myChart");
 
-  new Chart(ctx, {
-    type: "bar",
-    data: {
-      labels: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-      ],
-      datasets: [
-        {
-          label: "No of Hours",
-          data: [0, 0, 0, 0, 0, 0, 0],
-          borderWidth: 10,
-        },
-      ],
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true,
-        },
-      },
-    },
-  });
-</script>

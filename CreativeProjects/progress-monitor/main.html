@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Study Hours Input</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Study Hours Tracker</h1>
+    <form id="study-hours-form" action="/submit-study-hours" method="post">
+      <label for="study-hours">Number of hours studied:</label>
+      <input
+        type="number"
+        id="study-hours"
+        name="study-hours"
+        min="0"
+        required
+      />
+      <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -19,3 +19,8 @@ Welcome to the CreativeProgramming repository! This project is dedicated to crea
 git clone https://github.com/MimoHasPurpose/CreativeProgramming.git
 cd CreativeProgramming
 ```
+
+
+### References:
+- [tutorial](https://processing.org/tutorials)
+- [references](https://processing.org/reference)
